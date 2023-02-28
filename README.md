@@ -93,15 +93,15 @@ $ sudo apt-get install libboost-all-dev
 ```
 
 ## References used
-https://losst.pro/komanda-ls-linux
-https://losst.pro/gerp-poisk-vnutri-fajlov-v-linux
-https://losst.pro/komanda-wc-v-linux
-https://losst.pro/komanda-find-v-linux
-https://losst.pro/komanda-pwd-linux
-https://codeyarns.com/tech/2017-01-24-how-to-build-boost-on-linux.html#gsc.tab=0
-https://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html
-https://stackoverflow.com/questions/53647596/building-boost-from-sources-on-linux
-https://losst.pro/kak-pereimenovat-papku-linux#2_Команда_mv
-https://losst.pro/komanda-du-v-linux
-https://losst.pro/komanda-sort-v-linux
-https://losst.pro/komanda-head-linux
+- https://losst.pro/komanda-ls-linux
+- https://losst.pro/gerp-poisk-vnutri-fajlov-v-linux
+- https://losst.pro/komanda-wc-v-linux
+- https://losst.pro/komanda-find-v-linux
+- https://losst.pro/komanda-pwd-linux
+- https://codeyarns.com/tech/2017-01-24-how-to-build-boost-on-linux.html#gsc.tab=0
+- https://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html
+- https://stackoverflow.com/questions/53647596/building-boost-from-sources-on-linux
+- https://losst.pro/kak-pereimenovat-papku-linux#2_Команда_mv
+- https://losst.pro/komanda-du-v-linux
+- https://losst.pro/komanda-sort-v-linux
+- https://losst.pro/komanda-head-linux
