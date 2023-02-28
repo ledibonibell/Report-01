@@ -5,6 +5,7 @@
 ```
 $ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
 ```
+![Alt-](/home/ledibonibell/Изображения/Снимки экрана/1)
 
 ## 2. Разархивируйте скаченный файл в директорию `~/boost_1_69_0` 
 
@@ -17,17 +18,11 @@ $ tar -xvf boost_1_69_0.tar.gz
 ```
 $ ls -l | grep "^-" | wc -l
 ```
-```
-$ find . -maxdepth 1 -type f | wc -l
-```
 
 ## 4. Подсчитайте количество файлов в директории `~/boost_1_69_0` включая вложенные директории
 
 ```
 $ ls -l -R | wc -l
-```
-```
-$ find . -type f|wc -l
 ```
 
 ## 5. Подсчитайте количество заголовочных файлов, файлов с расширением `.cpp`, сколько остальных файлов (не заголовочных и не `.cpp`)
@@ -37,25 +32,17 @@ $ ls -l -R | grep -c *.hpp
 $ ls -l -R | grep -c *.cpp
 $ ls -l -R | grep -v *.hpp | grep -v *.cpp | grep -v 'итого' | wc -l
 ```
-```
-$ find . -name “*.hpp” -o -name “*.h” | wc -l
-$ find . -name “*.cpp” | wc -l
-$ find . -and -type -f -and -not -name “*.cpp” -and -not -name “*.h” -and -not - name “*.hpp” | wc -l
-```
 
 ## 6. Найдите полный пусть до файла `any.hpp` внутри библиотеки boost
 
 ```
 $ find $PWD -type f -name any.hpp
 ```
-```
-$ find . -name “any.hpp”
-```
 
 ## 7. Выведите в консоль все файлы, где упоминается последовательность `boost::asio`
 
 ```
-$ grep -Rl "boost::asio"
+$ grep -R -l "boost::asio"
 ```
 
 ## 8. Скомпилирутйе boost
