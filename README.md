@@ -5,7 +5,8 @@
 ```
 $ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
 ```
-!(/home/ledibonibell/Изображения/Снимки экрана/1)
+![1](https://user-images.githubusercontent.com/125737299/221936944-06092b0e-74f2-4d8a-ba79-9be818aa2fef.png)
+
 
 ## 2. Разархивируйте скаченный файл в директорию `~/boost_1_69_0` 
 
