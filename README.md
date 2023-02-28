@@ -1,21 +1,18 @@
 # Report-01
 
-## Paragraph 1 
-#### 1. Скачайте библиотеку boost с помощью утилиты `wget`
+## 1. Скачайте библиотеку boost с помощью утилиты `wget`
  
 ```
 $ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
 ```
 
-## Paragraph 2 
-#### 2. Разархивируйте скаченный файл в директорию `~/boost_1_69_0` 
+## 2. Разархивируйте скаченный файл в директорию `~/boost_1_69_0` 
 
 ```
 $ tar -xvf boost_1_69_0.tar.gz
 ```
 
-## Paragraph 3
-#### 3. Подсчитайте количество файлов в директории `~/boost_1_69_0` не включая вложенные директории
+## 3. Подсчитайте количество файлов в директории `~/boost_1_69_0` не включая вложенные директории
 
 ```
 $ ls -l | grep "^-" | wc -l
@@ -24,8 +21,7 @@ $ ls -l | grep "^-" | wc -l
 $ find . -maxdepth 1 -type f | wc -l
 ```
 
-## Paragraph 4
-#### 4. Подсчитайте количество файлов в директории `~/boost_1_69_0` включая вложенные директории
+## 4. Подсчитайте количество файлов в директории `~/boost_1_69_0` включая вложенные директории
 
 ```
 $ ls -l -R | wc -l
@@ -34,8 +30,7 @@ $ ls -l -R | wc -l
 $ find . -type f|wc -l
 ```
 
-## Paragraph 5
-#### 5. Подсчитайте количество заголовочных файлов, файлов с расширением `.cpp`, сколько остальных файлов (не заголовочных и не `.cpp`)
+## 5. Подсчитайте количество заголовочных файлов, файлов с расширением `.cpp`, сколько остальных файлов (не заголовочных и не `.cpp`)
 
 ```
 $ ls -l -R | grep -c *.hpp
@@ -48,8 +43,7 @@ $ find . -name “*.cpp” | wc -l
 $ find . -and -type -f -and -not -name “*.cpp” -and -not -name “*.h” -and -not - name “*.hpp” | wc -l
 ```
 
-## Paragraph 6
-#### 6. Найдите полный пусть до файла `any.hpp` внутри библиотеки boost
+## 6. Найдите полный пусть до файла `any.hpp` внутри библиотеки boost
 
 ```
 $ find $PWD -type f -name any.hpp
@@ -58,37 +52,32 @@ $ find $PWD -type f -name any.hpp
 $ find . -name “any.hpp”
 ```
 
-## Paragraph 7
-#### 7. Выведите в консоль все файлы, где упоминается последовательность `boost::asio`
+## 7. Выведите в консоль все файлы, где упоминается последовательность `boost::asio`
 
 ```
 $ grep -Rl "boost::asio"
 ```
 
-## Paragraph 8
-#### 8. Скомпилирутйе boost
+## 8. Скомпилирутйе boost
 
 ```
 $ ./bootstrap.sh --prefix=boost_output
 $ ./b2 install
 ```
 
-## Paragraph 9
-#### 9. Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию `~/boost-libs`
+## 9. Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию `~/boost-libs`
 
 ```
 $ mv ~/boost_1_69_0/boost_output/lib ~/boost-libs
 ```
 
-## Paragraph 10
-#### 10. Подсчитайте сколько занимает дискового пространства каждый файл в этой директории
+## 10. Подсчитайте сколько занимает дискового пространства каждый файл в этой директории
 
 ```
 $ du -h -a 
 ```
 
-## Paragraph 11
-#### 11. Найдите топ 10 самых "тяжёлых"
+## 11. Найдите топ 10 самых "тяжёлых"
 
 ```
 $ du -h -a | sort -r -h | head -n 10
@@ -102,3 +91,17 @@ $ sudo apt install gcc
 $ sudo apt install build-essential
 $ sudo apt-get install libboost-all-dev
 ```
+
+## References used
+https://losst.pro/komanda-ls-linux
+https://losst.pro/gerp-poisk-vnutri-fajlov-v-linux
+https://losst.pro/komanda-wc-v-linux
+https://losst.pro/komanda-find-v-linux
+https://losst.pro/komanda-pwd-linux
+https://codeyarns.com/tech/2017-01-24-how-to-build-boost-on-linux.html#gsc.tab=0
+https://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html
+https://stackoverflow.com/questions/53647596/building-boost-from-sources-on-linux
+https://losst.pro/kak-pereimenovat-papku-linux#2_Команда_mv
+https://losst.pro/komanda-du-v-linux
+https://losst.pro/komanda-sort-v-linux
+https://losst.pro/komanda-head-linux
