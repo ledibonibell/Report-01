@@ -1,7 +1,7 @@
 # Report-01
 
 ## Paragraph 1 
-#### Download the boost file
+#### 1. Скачайте библиотеку boost с помощью утилиты wget. Адрес для скачивания
  
 ```
 $ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
