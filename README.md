@@ -1,15 +1,15 @@
 # Report-01
 First Lab Report
 
-# Paragraph 1
-### Download the boost file
+# Paragraph 1 ### Download the boost file
  
 ```
 $ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
 ```
 
 
-# Paragraph 2
+# Paragraph 2 ### Installing the boost file
+
 
 # Paragraph 3
 
